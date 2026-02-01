@@ -88,6 +88,11 @@ The optimal specification selected using the **Akaike Information Criterion (AIC
 | **Cointegration Evidence** | ✅ Negative ECT confirms long-run equilibrium |
 | **Residual Diagnostics** | ✅ No evidence of serial correlation or instability |
 
+
+<p align="center">
+  <img src="docs/results_notbooklm.png" width="700" />
+</p>
+
 ---
 
 ## 📌 Conclusions
