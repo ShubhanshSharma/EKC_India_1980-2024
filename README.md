@@ -125,20 +125,6 @@ Based strictly on the empirical findings:
 
 ---
 
-## 📂 Repository Structure
-
-```
-├── data/                   # Raw and processed datasets
-├── scripts/                # R/Python analysis scripts
-├── results/                # Model outputs and diagnostics
-├── docs/                   # Detailed documentation
-│   ├── data-sources.md
-│   ├── preprocessing.md
-│   ├── model-spec.md
-│   └── robustness.md
-└── README.md
-```
-
 ### 📚 Documentation
 
 Detailed documentation will be added in the `/docs` directory, including:
