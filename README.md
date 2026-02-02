@@ -1,4 +1,110 @@
-<div align="center">
+<!-- <div align="center"> -->
+
+---
+
+## 🚀 How to Run the Analysis
+
+This repository contains a time-series analysis of the **Environmental Kuznets Curve (EKC)** for India using econometric and statistical modeling techniques.
+
+The analysis is implemented entirely in **Jupyter Notebooks** and can be reproduced by following the steps below.
+
+
+
+### 📦 Requirements
+
+Ensure you have **Python 3.9+** installed.
+
+The analysis was developed and tested with the following library versions:
+```txt
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.11.4
+statsmodels==0.14.6
+matplotlib==3.10.0
+seaborn==0.13.2
+```
+
+---
+
+### 📥 Installation
+
+It is **strongly recommended** to use a virtual environment.
+
+#### Step 1: Create Virtual Environment
+```bash
+python -m venv ekc-env
+source ekc-env/bin/activate  # On Windows: ekc-env\Scripts\activate
+```
+
+#### Step 2: Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### ▶️ Running the Analysis
+
+#### Launch Jupyter Notebook
+```bash
+jupyter notebook
+```
+
+Then run the notebooks in the following **recommended order**:
+
+---
+
+### 1️⃣ `EKC_with_OLS.ipynb`
+
+#### 🎯 Purpose
+
+- Exploratory analysis
+- Baseline EKC estimation using OLS
+- Log transformations and visualization
+- Initial economic intuition checks
+
+#### 📊 Key Outputs
+
+- EKC shape diagnostics
+- Regression coefficients
+- Residual behavior
+
+---
+
+### 2️⃣ `EKC_ARDL_India.ipynb`
+
+#### 🎯 Purpose
+
+- Time-series econometric modeling
+- Stationarity testing using ADF tests
+- ARDL model selection and estimation
+- Long-run and short-run dynamics
+- Error correction interpretation (UECM logic)
+
+#### 📊 Key Outputs
+
+- ADF test statistics and p-values
+- Selected ARDL lag structure
+- Long-run elasticities
+- Speed of adjustment estimates
+
+---
+
+### 3️⃣ `EKC_with_policy_changes.ipynb`
+
+#### 🎯 Purpose
+
+- Incorporation of structural and policy-related variables
+- Renewable share, fossil fuel dependence, and energy intensity
+- Interpretation of policy-relevant coefficients
+
+#### 📊 Key Outputs
+
+- Policy-sensitive EKC behavior
+- Comparative coefficient analysis
+- Stability insights
+
+---
 
 # 🌍 Environmental Kuznets Curve (EKC) Analysis for India 🇮🇳
 
@@ -88,6 +194,11 @@ The optimal specification selected using the **Akaike Information Criterion (AIC
 | **Cointegration Evidence** | ✅ Negative ECT confirms long-run equilibrium |
 | **Residual Diagnostics** | ✅ No evidence of serial correlation or instability |
 
+
+<p align="center">
+  <img src="docs/results_notbooklm.png" width="700" />
+</p>
+
 ---
 
 ## 📌 Conclusions
@@ -119,20 +230,6 @@ Based strictly on the empirical findings:
 > Waiting for growth-driven "automatic decoupling" is unrealistic; **deliberate energy transition policies are required**.
 
 ---
-
-## 📂 Repository Structure
-
-```
-├── data/                   # Raw and processed datasets
-├── scripts/                # R/Python analysis scripts
-├── results/                # Model outputs and diagnostics
-├── docs/                   # Detailed documentation
-│   ├── data-sources.md
-│   ├── preprocessing.md
-│   ├── model-spec.md
-│   └── robustness.md
-└── README.md
-```
 
 ### 📚 Documentation
 
